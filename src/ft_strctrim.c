@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libft.h"
+#include "libft.h"
+
 static int		ft_findstart(char const *s, char c)
 {
 	int		i;

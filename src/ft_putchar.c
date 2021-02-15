@@ -6,11 +6,12 @@
 /*   By: esukava <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 15:44:20 by esukava           #+#    #+#             */
-/*   Updated: 2020/06/22 14:00:57 by esukava          ###   ########.fr       */
+/*   Updated: 2021/02/15 15:42:51 by alero            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libft.h"
+#include "libft.h"
+
 void		ft_putchar(char c)
 {
 	write(1, &c, 1);

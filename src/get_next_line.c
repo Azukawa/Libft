@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libft.h"
+#include "libft.h"
+
 char	*concat(char **line, char *buf)
 {
 	char		*temp;

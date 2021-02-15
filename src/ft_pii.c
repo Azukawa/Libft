@@ -10,7 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/libft.h"
+#include "libft.h"
+
 /*
 **	this pii generating function is unstable when size gets big (> ~10000)
 */
