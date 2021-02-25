@@ -6,7 +6,7 @@
 /*   By: alero <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:07:33 by alero             #+#    #+#             */
-/*   Updated: 2021/02/11 19:29:39 by alero            ###   ########.fr       */
+/*   Updated: 2021/02/24 16:48:34 by alero            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	this pii generating function is unstable when size gets big (> ~10000)
 */
 
-t_pii		ft_pii_pt2(t_pii pii)
+static t_pii	ft_pii_pt2(t_pii pii)
 {
 	while (pii.i > -1)
 	{
@@ -32,9 +32,11 @@ t_pii		ft_pii_pt2(t_pii pii)
 	return (pii);
 }
 
-char		*ft_pii(int size)
+char			*ft_pii(int size)
 {
 	t_pii pii;
+	char *a;
+	char *oldout;
 
 	if (!(pii.r = (int *)ft_memalloc((size + 1) * sizeof(int))))
 		return (NULL);
@@ -49,7 +51,11 @@ char		*ft_pii(int size)
 		pii.d = 0;
 		pii.i = pii.k;
 		pii = ft_pii_pt2(pii);
-		pii.out = ft_strjoin(pii.out, ft_itoa(pii.c + pii.d / 10000));
+		a = ft_itoa(pii.c + pii.d / 10000);
+		oldout = pii.out;	
+		pii.out = ft_strjoin(pii.out, a);
+		free(oldout);
+		free(a);
 		pii.c = pii.d % 10000;
 		pii.k = pii.k - 14;
 	}

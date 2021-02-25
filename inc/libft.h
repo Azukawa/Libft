@@ -6,7 +6,7 @@
 /*   By: esukava <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 13:48:09 by esukava           #+#    #+#             */
-/*   Updated: 2021/02/11 18:33:52 by alero            ###   ########.fr       */
+/*   Updated: 2021/02/25 12:44:38 by alero            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,6 @@ int				get_next_line(const int fd, char **line);
 int				ft_clamp(int min, int max, int nb);
 float			ft_lerp_1d(float start, float end, float t);
 char			*ft_pii(int size);
+int				myrand(unsigned long seed);
 
 #endif

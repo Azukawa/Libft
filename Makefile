@@ -6,7 +6,7 @@
 #    By: esukava <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/10 12:13:28 by esukava           #+#    #+#              #
-#    Updated: 2021/02/15 15:42:16 by alero            ###   ########.fr        #
+#    Updated: 2021/02/25 12:45:27 by alero            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,8 @@ SRC_LIST = \
 	ft_strtrim.c\
 	ft_tolower.c\
 	ft_toupper.c\
-	get_next_line.c
+	get_next_line.c\
+	ft_myrand.c
 INCLUDE_DIR = inc
 SRC_DIR = src
 BUILD_DIR = build
